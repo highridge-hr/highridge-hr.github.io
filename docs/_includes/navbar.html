@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMain"
+      aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerMain">
+      <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        {% for item in site.data.navbar %}
+        <li class="nav-item p-4 py-2">
+          {% if page.url == item.link %}
+          <a class="nav-link active" href="{{item.link}}" aria-current="page">{{item.name}}</a>
+          {% else %}
+          <a class="nav-link" href="{{item.link}}">{{ item.name }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+---
+---
+
+@import "custom";
+@import "svg-social-icons";
+
+.bg-img-header-1 {
+    background-image: url("../img/bg-header-1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-clock {
+    background-image: url("../img/bg-clock.jpeg");
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 220px;
+}
+
+.bg-img-hr-90 {
+    background-image: url("../img/bg-hr-90.jpeg");
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 220px;
+}

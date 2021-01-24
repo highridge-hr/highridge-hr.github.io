@@ -1,0 +1,51 @@
+$grid-gutter-width: 3rem;
+
+$font-size-base: 1.2rem;
+$font-weight-light: 200;
+$font-weight-normal: 300;
+
+$primary: #2F4F6C;
+$secondary: #AAB9C4;
+$light: #E0E5E9;
+
+$body-color: $primary;
+$input-bg: #CAD4DC;
+
+// $custom-theme-colors: (
+//   "grey":      #D5DDE2,
+//   "grey-dark": #AAB9C4,
+// );
+
+// $spacer: 1rem !default;
+// $spacers: (
+//   0: 0,
+//   1: $spacer / 4,
+//   2: $spacer / 2,
+//   3: $spacer,
+//   4: $spacer * 1.5,
+//   5: $spacer * 3,
+// ) !default;
+// $grid-gutter-width: 1.5rem !default;
+// $container-padding-x: $grid-gutter-width / 2 !default;
+
+// $blockquote-margin-y:         $spacer !default;
+// $blockquote-font-size:        $font-size-base * 1.25 !default;
+// $blockquote-footer-color:     $gray-600 !default;
+// $blockquote-footer-font-size: $small-font-size !default;
+
+@import "bootstrap/bootstrap";
+
+.blockquote {
+  &::before {
+    content: "\201C"; // ldquo
+  }
+  &::after {
+    content: "\201D"; // rdquo
+  }
+}
+
+.blockquote-footer {
+  &::before {
+    content: ""; // em dash, nbsp
+  }
+}

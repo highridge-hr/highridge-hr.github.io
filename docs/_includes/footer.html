@@ -1,0 +1,44 @@
+<div class="container-fluid py-5 bg-primary text-white">
+  <div class="row mb-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="navbar-dark">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="navbar-dark">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="/services/">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/online-health-check/">Online health check</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <span class="pb-2">Follow us: {% include social-links.html %}</span>
+    </div>
+  </div>
+  <div class="row small">
+    <div class="col">
+      <div><a class="link-secondary text-decoration-none" href="#">Privacy</a> &vert; <a
+          class="link-secondary text-decoration-none" href="#">Terms</a></div>
+      <small class="text-muted fst-italic">&#169; Copyright {{ 'now' | date: "%Y" }} Highridge HR
+        Consultancy</small>
+    </div>
+  </div>
+</div>
