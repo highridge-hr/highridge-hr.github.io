@@ -2,15 +2,15 @@ col1:
   - title: About Us
     url: /about.html
 
-  - title: Blog
-    url: /blog.html
-
-  - title: Contact Us
-    url: https://us7.list-manage.com/contact-form?u=05910a7629254ae5e4552f8b5&form_id=28128148254af28013ce80aa81709a02
-
-col2:
   - title: Services
     url: /services.html
+
+  # - title: Blog
+  #   url: /blog.html
+
+col2:
+  - title: Contact Us
+    url: https://us7.list-manage.com/contact-form?u=05910a7629254ae5e4552f8b5&form_id=28128148254af28013ce80aa81709a02
 
   - title: Online Health Check
     url: \#

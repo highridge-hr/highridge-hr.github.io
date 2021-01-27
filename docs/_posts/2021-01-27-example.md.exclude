@@ -2,11 +2,8 @@
 layout: post
 title:  Example post
 image: example.jpg
+lead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate sed purus in bibendum. Donec in sapien purus."
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate sed purus in bibendum. Donec in sapien purus. 
-
-<!--more-->
 
 **What is Lorem Ipsum?**
 

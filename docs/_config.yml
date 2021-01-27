@@ -5,8 +5,8 @@ title: Highridge HR Consultancy
 name: Highridge HR Consultancy
 email: contact@highridge-hr.co.uk
 description: >-
-  Specialising in Insurance and Financial Services SME businesses, 
-  Highridge HR works as your HR team to ensure your focus is on people, 
+  Specialising in Insurance and Financial Services SME businesses,
+  Highridge HR works as your HR team to ensure your focus is on people,
   not process.
 
 social:
@@ -26,7 +26,7 @@ permalink: /:collection/:year/:month/:day/:title:output_ext
 
 collections:
   posts:
-    output: true
+    output: false
     permalink: /blog/:year/:month/:day/:title:output_ext
 
 # Serving
@@ -49,14 +49,16 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-# exclude:
-#   - "Gemfile"
-#   - "Gemfile.lock"
-#   - "node_modules"
-#   - "vendor/bundle/"
-#   - "vendor/cache/"
-#   - "vendor/gems/"
-#   - "vendor/ruby/"
+
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - "*.exclude"
 
 # Outputting
 # permalink: /:title/
