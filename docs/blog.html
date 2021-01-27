@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog
+navPosition: 3
+---
+
+<div class="jumbotron bg-img-header-blog">
+	<div class="content">
+		<h1>Hig<span class="text-secondary">HR</span>idge Blog</h1>
+		<p class="fw-bolder">Company announcements and industry news.</p>
+	</div>
+</div>
+
+<div class="layout">
+
+	{% assign posts = site.posts %}
+	<div class="container-fluid py-5 text-center">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xxl-4 g-4">
+			{% for post in posts %}
+			<div class="col">
+				<div class="card h-100">
+					<img class="card-img-top"
+						src="{% if post.image %}/assets/img/posts/{{ post.image }}{% else %}/assets/img/bg-header-blog.jpg{% endif %}"
+						alt="{{ post.title }}">
+					<div class="card-body">
+						<h5 class="card-title"><a href="{{ post.url }}" class="stretched-link text-decoration-none">{{ post.title
+								}}</a></h5>
+						<p class="card-text">
+							{% if post.lead %}
+							{{ post.lead }}
+							{% else %}
+							{{ post.excerpt | markdownify | strip_html }}
+							{% endif %}</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">{{ post.date | date_to_string: "ordinal" }}</small>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>

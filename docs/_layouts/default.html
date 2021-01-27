@@ -28,11 +28,11 @@
   {% include svg-defs.html %}
   {% include navbar.html %}
 
-  <!-- <div class="container-fluid px-4" id="main" role="main"> -->
-  {{ content }}
-  <!-- </div> -->
+  <div class="main-layout">
+    {{ content }}
 
-  {% include footer.html %}
+    {% include footer.html %}
+  </div>
 
   {% include analytics.html %}
   {% include scripts.html %}

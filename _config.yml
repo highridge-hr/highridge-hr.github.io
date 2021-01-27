@@ -1,6 +1,26 @@
+### Site Variables ###
+url: "https://www.highridge-hr.co.uk"
+title: Highridge HR Consultancy
+
+name: Highridge HR Consultancy
+email: contact@highridge-hr.co.uk
+description: >-
+  Specialising in Insurance and Financial Services SME businesses, 
+  Highridge HR works as your HR team to ensure your focus is on people, 
+  not process.
+
+social:
+  linkedin: highridge-hr
+  # twitter: highridge-hr
+  # github: highridge-hr
+
+google_analytics:
+
+### Jekyll Settings ###
 # Build settings
 source: ./docs
 destination: ./_site
+excerpt_separator: <!--more-->
 
 # Serving
 detach: false
@@ -28,24 +48,5 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
-
 # Outputting
 # permalink: /:title/
-
-# Variables
-url: "https://www.highridge-hr.co.uk"
-title: Highridge HR Consultancy
-
-name: Highridge HR Consultancy
-email: contact@highridge-hr.co.uk
-description: >-
-  Specialising in Insurance and Financial Services SME businesses, 
-  Highridge HR works as your HR team to ensure your focus is on people, 
-  not process.
-
-social:
-  linkedin: highridge-hr
-  twitter: highridge-hr
-  # github: highridge-hr
-
-google_analytics:

@@ -2,6 +2,22 @@
 @import "svg-social-icons";
 @import "svg-highridge";
 
+.main-layout {
+    @include make-container(0);
+    @include media-breakpoint-up(xxl) {
+        max-width: map-get($container-max-widths, "xxl");
+    }
+    background-color: $white;
+}
+
+.layout {
+    @include make-container(0);
+    @include media-breakpoint-up(xxl) {
+        max-width: map-get($container-max-widths, "xxl");
+    }
+    // background-color: $white;
+}
+
 .jumbotron {
     @include make-container();
 

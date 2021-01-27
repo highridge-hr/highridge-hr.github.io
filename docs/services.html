@@ -13,105 +13,115 @@ navPosition: 2
   </div>
 </div>
 
-<div class="container-fluid py-5 text-center">
-  <div class="row">
-    <div class="col">
-      <p class="lead">We live and breathe HR and People Development and together we can ensure that your business is not
-        only legally compliant, but working to maximise
-        return on your largest investment: your people.</p>
-    </div>
-  </div>
-</div>
+<div class="layout">
 
-<div class="container-fluid py-5 bg-light text-center">
-  <div class="row">
-    <div class="col">
-      <h3>What We Offer</h3>
+  <div class="container-fluid py-5 text-center">
+    <div class="row">
+      <div class="col">
+        <p class="lead">We live and breathe HR and People Development and together we can ensure that your business is
+          not
+          only legally compliant, but working to maximise
+          return on your largest investment: your people.</p>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-6 col-sm-4 mt-4">
-      {% include icon.html icon="hr-logo" %}
-      <p>Whether it’s to shift your strategic focus, deliver cultural change, develop agility to meet future challenges
-        or do more with less, our HR support will set you on the right track.</p>
-    </div>
-    <div class="col-6 col-sm-4 mt-4">
-      {% include icon.html icon="hr-logo" %}
-      <p>We use recognised HR standards & development solutions to provide pragmatic advice and help companies like
-        yours sustain business advantage and high performance.</p>
-    </div>
-    <div class="col-6 col-sm-4 mt-4">
-      {% include icon.html icon="hr-logo" %}
-      <p>Your business is unique, so we create a tailored solution package, designed to deliver the support and
-        expertise you need, right when you need it.</p>
-    </div>
-  </div>
-</div>
 
-<div class="container-fluid py-5 text-center">
-  <div class="row">
-    <div class="col">
-      <h3>Benefits to You</h3>
-      <p>Hiring an external HR & Development Consultant has a positive impact it has on your bottom line. Using
-        Highridge HR Consultancy
-        can save you money!</p>
-      <p>Instead of hiring a full time HR Manager you can outsource your HR and Training needs and use us on an
-        as-needed or a retainer basis.</p>
+  <div class="container-fluid py-5 bg-light text-center">
+    <div class="row">
+      <div class="col">
+        <h3>What We Offer</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-sm-4 mt-4">
+        {% include icon.html icon="hr-logo" %}
+        <p>Whether it’s to shift your strategic focus, deliver cultural change, develop agility to meet future
+          challenges
+          or do more with less, our HR support will set you on the right track.</p>
+      </div>
+      <div class="col-6 col-sm-4 mt-4">
+        {% include icon.html icon="hr-logo" %}
+        <p>We use recognised HR standards & development solutions to provide pragmatic advice and help companies like
+          yours sustain business advantage and high performance.</p>
+      </div>
+      <div class="col-6 col-sm-4 mt-4">
+        {% include icon.html icon="hr-logo" %}
+        <p>Your business is unique, so we create a tailored solution package, designed to deliver the support and
+          expertise you need, right when you need it.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid py-5 bg-light text-center">
-  <div class="row">
-    <div class="col">
-      <h3>Our Services</h3>
+  <div class="container-fluid py-5 text-center">
+    <div class="row">
+      <div class="col">
+        <h3>Benefits to You</h3>
+        <p>Hiring an external HR & Development Consultant has a positive impact it has on your bottom line. Using
+          Highridge HR Consultancy
+          can save you money!</p>
+        <p>Instead of hiring a full time HR Manager you can outsource your HR and Training needs and use us on an
+          as-needed or a retainer basis.</p>
+      </div>
     </div>
   </div>
-  <div class="row">
-    {% for service in site.data.services %}
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4">
-      {% include icon.html icon=service.icon %}
-      <p>{{ service.title }}</p>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="row mt-4">
-    <div class="col">
-      <p class="fw-bold">This list is not exhaustive. Where an issue or plan concerns your people we are here to support
-        you.</p>
-    </div>
-  </div>
-</div>
 
-<div class="container-fluid py-5 text-center bg-img-hr">
-  <div class="row">
-    <div class="col">
-      <h3>How We Can Help</h3>
-      <p>With experience in Operational Management and HR we have seen it all, from unbelievable excuses for poor
-        performance, to helping businesses like yours grow through making the most of their people.</p>
-      <p>We bring a friendly, informal approach to our clients and this starts with you and what you need. Working
-        together we can be your sounding board and guide and help you come to the right outcome for all when handling
-        all types of situations.</p>
-      <p>We can also help you shape your company culture to ensure that all your employees are on the same page and live
-        and breath your values which will then deliver success for your business.</p>
+  <div class="container-fluid py-5 bg-light text-center">
+    <div class="row">
+      <div class="col">
+        <h3>Our Services</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for service in site.data.services %}
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4">
+        {% include icon.html icon=service.icon %}
+        <p>{{ service.title }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <p class="fw-bold">This list is not exhaustive. Where an issue or plan concerns your people we are here to
+          support
+          you.</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid py-5 bg-light text-center">
-  <div class="row">
-    <div class="col">
-      <h3>Working With Us</h3>
-      <p>You may be in a position where you are not sure what support you need or if your current HR policies, contracts
-        and processes are in line with legislation. To get an understanding of this we are pleased to offer you access
-        to a free on-line health check.</p>
-      <p>From this survey we can work with you to highlight any potential risks you may have which could open you up to
-        financial issues and damage to your reputation.</p>
+  <div class="container-fluid py-5 text-center bg-img-hr">
+    <div class="row">
+      <div class="col">
+        <h3>How We Can Help</h3>
+        <p>With experience in Operational Management and HR we have seen it all, from unbelievable excuses for poor
+          performance, to helping businesses like yours grow through making the most of their people.</p>
+        <p>We bring a friendly, informal approach to our clients and this starts with you and what you need. Working
+          together we can be your sounding board and guide and help you come to the right outcome for all when handling
+          all types of situations.</p>
+        <p>We can also help you shape your company culture to ensure that all your employees are on the same page and
+          live
+          and breath your values which will then deliver success for your business.</p>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <a href="#" class="btn btn-primary px-4">Complete survey</a>
+
+  <div class="container-fluid py-5 bg-light text-center">
+    <div class="row">
+      <div class="col">
+        <h3>Working With Us</h3>
+        <p>You may be in a position where you are not sure what support you need or if your current HR policies,
+          contracts
+          and processes are in line with legislation. To get an understanding of this we are pleased to offer you access
+          to a free on-line health check.</p>
+        <p>From this survey we can work with you to highlight any potential risks you may have which could open you up
+          to
+          financial issues and damage to your reputation.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="#" class="btn btn-primary px-4">Complete survey</a>
+      </div>
     </div>
   </div>
+
 </div>
