@@ -9,13 +9,13 @@ host: 127.0.0.1
 baseurl: "" # does not include hostname
 show_dir_listing: false
 
-kramdown:
-  syntax_highlighter_opts:
-    css_class: "highlight"
+# kramdown:
+#   syntax_highlighter_opts:
+#     css_class: "highlight"
 
 sass:
-  sass_dir: assets/css
-  style: :expanded # :compressed
+  sass_dir: _sass
+  # style: :compressed
 
 # safe: true
 # whitelist: []

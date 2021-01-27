@@ -10,7 +10,7 @@ PORT := 4000
 .PHONY: serve
 serve: container/build
 	docker run --rm --name $(NAME) -it -v "$(HERE):/srv/jekyll" -p 127.0.0.1:$(PORT):4000 $(IMAGE) -- \
-		jekyll serve --incremental
+		jekyll serve
 
 .PHONY: build
 build: container/build

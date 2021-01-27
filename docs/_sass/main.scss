@@ -1,0 +1,108 @@
+@import "bootstrap-custom";
+@import "svg-social-icons";
+@import "svg-highridge";
+
+.jumbotron {
+    @include make-container();
+
+    display: flex;
+    align-items: center;
+    padding-top: map-get($spacers, 5);
+    padding-bottom: map-get($spacers, 5);
+    min-height: 400px;
+    background-color: $primary;
+    color: $white;
+
+    .content {
+        @include make-col-ready();
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(9);
+        }
+    }
+}
+
+.bg-img-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img-header-home {
+    @extend .bg-img-header;
+    background-image: url("../img/bg-header-home.jpg");
+}
+
+.bg-img-header-about {
+    @extend .bg-img-header;
+    background-image: url("../img/bg-header-about.jpg");
+}
+
+.bg-img-header-services {
+    @extend .bg-img-header;
+    background-image: url("../img/bg-header-services.png");
+}
+
+.bg-img-header-blog {
+    @extend .bg-img-header;
+    background-image: url("../img/bg-header-blog.jpg");
+}
+
+.bg-img-header-404 {
+    @extend .bg-img-header;
+    background-image: url("../img/bg-header-404.jpg");
+}
+
+.bg-img-clock {
+    background-image: $bg-url-clock;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-img-hr {
+    background-image: $bg-url-hr-logo;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-img-hr-90 {
+    background-image: $bg-url-hr-logo-rotated-90;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-hr-logo {
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 225px;
+    height: 45px;
+    background-image: $bg-url-hr-logo-full;
+}
+
+.img-profile {
+    @extend .mx-auto;
+    @extend .d-block;
+    @extend .mb-2;
+    width: 150px;
+    height: auto;
+}
+
+.icon {
+    @extend .mx-auto;
+    @extend .d-block;
+    @extend .mb-2;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    fill: $primary;
+}

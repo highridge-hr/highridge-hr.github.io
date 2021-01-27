@@ -1,20 +1,25 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-  <div class="container-fluid px-4">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMain"
+{% assign docs = site.pages | sort: "navPosition" %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary px-0 py-3">
+  <div class="container-fluid p-0">
+    <a class="navbar-brand ms-4 my-2 p-0" href="/"><i class="img-hr-logo"></i></a>
+    <button class="navbar-toggler me-4 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerMain"
       aria-controls="navbarTogglerMain" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerMain">
-      <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
-      <ul class="navbar-nav mb-2 mb-lg-0">
-        {% for item in site.data.navbar %}
-        <li class="nav-item p-4 py-2">
-          {% if page.url == item.link %}
-          <a class="nav-link active" href="{{item.link}}" aria-current="page">{{item.name}}</a>
-          {% else %}
-          <a class="nav-link" href="{{item.link}}">{{ item.name }}</a>
-          {% endif %}
+      <ul class="navbar-nav">
+        {% for doc in docs %}
+        {% if doc.navPosition %}
+        <li class="nav-item">
+          <a class="nav-link text-end px-4 py-2 {% if doc.url == page.url %}active{% endif %}" href="{{ doc.url }}" {%
+            if doc.url==page.url %}aria-current="page" {% endif %}>{{ doc.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% for doc in site.data.navbar-links %}
+        <li class="nav-item">
+          <a class="nav-link text-end px-4 py-2 {% if doc.url == page.url %}active{% endif %}" href="{{ doc.url }}" {%
+            if doc.url==page.url %}aria-current="page" {% endif %}>{{ doc.title }}</a>
         </li>
         {% endfor %}
       </ul>

@@ -1,48 +1,51 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="container-fluid py-5 bg-primary text-white bg-img-header-1">
-  <div class="row">
-    <div class="col-sm-9">
-      <h1 class="text-uppercase lh-sm fw-bold">
-        Help your Business,<br>
-        Help your People,<br>
-        <span class="text-secondary">Reach the Top</span><br>
-        Of their Potential
-      </h1>
-      <p>Specialising in Insurance and Financial Services SME businesses, Highridge HR works
-        as your HR
-        team to ensure your focus is on people, not process.</p>
-      <a href="#" class="btn btn-light btn-lg bg-white text-primary px-4">Contact us</a>
-    </div>
+<div class="jumbotron bg-img-header-home">
+  <div class="content">
+    <h1>
+      Help your Business,<br>
+      Help your People,<br>
+      <span class="text-secondary">Reach the Top</span><br>
+      Of their Potential
+    </h1>
+    <p class="fw-bolder">Specialising in Insurance and Financial Services SME businesses, Highridge HR works
+      as your HR
+      team to ensure your focus is on people, not process.</p>
+    <a href="{{ site.data.external-links.contact }}" class="btn btn-light bg-white text-primary px-4">Contact us</a>
   </div>
 </div>
 
-<div class="container-fluid py-5">
-  <div class="row py-5 position-relative bg-img-clock">
-    <div class="col-sm-9 lead position-absolute top-50 start-0 translate-middle-y">
-      <p>At Highridge HR we understand the pressures of running a business and how HR compliance rules
-        and regulations can impact your time.</p>
-      <p><strong>This is where we can help you.</strong></p>
+<div class="container-fluid">
+  <div class="row py-5 bg-img-clock">
+    <div class="col-sm-9 d-flex align-items-center lead">
+      <div>
+        <p>At Highridge HR we understand the pressures of running a business and how HR compliance rules
+          and regulations can impact your time.</p>
+        <p><strong>This is where we can help you.</strong></p>
+      </div>
     </div>
   </div>
   <div class="row py-5 justify-content-end bg-img-hr-90">
-    <div class="col-sm-9 text-end">
-      <h3 class="mb-4 fw-bolder text-uppercase">Making Us A Part Of Your Business</h3>
-      <p>As your HR Business Partner, building trust is the key to the success of your business and people.</p>
-      <p>We pride ourselves on ensuring that we become a part of your business - embedding high expectations,
-        implementing robust business procedures and providing support and guidance.</p>
-      <p><strong>Taking this approach has helped our clients grow their business and avoid employee relationship
-          issues.</strong></p>
+    <div class="col-sm-9 d-flex align-items-center text-end">
+      <div>
+        <h3>Making Us A Part Of Your Business</h3>
+        <p>As your HR Business Partner, building trust is the key to the success of your business and people.</p>
+        <p>We pride ourselves on ensuring that we become a part of your business - embedding high expectations,
+          implementing robust business procedures and providing support and guidance.</p>
+        <p><strong>Taking this approach has helped our clients grow their business and avoid employee relationship
+            issues.</strong></p>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="container-fluid py-5 bg-light text-center">
-  <div class="row mb-4">
+  <div class="row">
     <div class="col">
-      <h3 class="mb-4 fw-bolder text-uppercase">Why Choose Highridge HR?</h3>
+      <h3>Why Choose Highridge HR?</h3>
       <p>Having worked in Operational and HR roles within insurance and financial services for over 30 years, we
         understand your industry inside out.</p>
       <p>We are on a mission to support, develop and assist our clients at the highest level. Unlike other outsourced HR
@@ -50,29 +53,29 @@ layout: default
     </div>
   </div>
   <div class="row">
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p><strong>Understand your industry</strong> & regulations associated with it.</p>
     </div>
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p>Advise on the <strong>best ways to invest in your people.</strong></p>
     </div>
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p>Are <strong>not corporate</strong> - with a friendly, informal approach to our work.</p>
     </div>
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p>Are not a &quot;one size fits all&quot; business. We tailor our work to fit your company and its values.</p>
     </div>
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p>Don&apos;t use faceless call centres. We&apos;re <strong>friendly, approachable and care for individual
           circumstances.</strong></p>
     </div>
-    <div class="col-6 col-sm-4 mb-4">
-      <img src="/assets/img/icon-highridge-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Highridge HR">
+    <div class="col-6 col-sm-4 mt-4">
+      {% include icon.html icon="hr-logo" %}
       <p>Are a <strong>cost effective HR solution</strong> for your business &hyphen; pick whether you use us on a
         retainer or ad-hoc basis.</p>
     </div>
@@ -80,101 +83,43 @@ layout: default
 </div>
 
 <div class="container-fluid py-5 text-center">
-  <div class="row mb-4">
-    <h3 class="mb-4 fw-bolder text-uppercase">Trusted and relied upon by many</h3>
+  <div class="row">
+    <h3>Trusted and relied upon by many</h3>
   </div>
   <div class="row">
-    <div class="col-sm-6 col-md-4 mb-4">
-      <img src="/assets/img/placeholder-profile.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Profile">
+    {% for quote in site.data.quotes %}
+    <div class="col-sm-6 col-md-4 mt-4">
+      <svg viewBox="0 0 150 150" class="img-profile">
+        <use xlink:href="#profile"></use>
+      </svg>
       <figure>
         <blockquote class="blockquote">
-          Quote goes in here
+          {{ quote.content }}
         </blockquote>
         <figcaption class="blockquote-footer">
-          Name, Role, <cite title="Company">Company</cite>
+          {{ quote.name }}, {{ quote.role }}, <cite title="Company">{{ quote.company }}</cite>
         </figcaption>
       </figure>
     </div>
-    <div class="col-sm-6 col-md-4 mb-4">
-      <img src="/assets/img/placeholder-profile.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Profile">
-      <figure>
-        <blockquote class="blockquote">
-          Quote goes in here
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Name, Role, <cite title="Company">Company</cite>
-        </figcaption>
-      </figure>
-    </div>
-    <div class="col-sm-6 col-md-4 mb-4">
-      <img src="/assets/img/placeholder-profile.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Profile">
-      <figure>
-        <blockquote class="blockquote">
-          Quote goes in here
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Name, Role, <cite title="Company">Company</cite>
-        </figcaption>
-      </figure>
-    </div>
+    {% endfor %}
   </div>
 </div>
 
 <div class="container-fluid py-5 bg-light text-center">
-  <div class="row mb-4">
+  <div class="row">
     <div class="col">
-      <h3 class="mb-4 fw-bolder text-uppercase">Our Services</h3>
+      <h3>Our Services</h3>
     </div>
   </div>
   <div class="row">
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Performance management">
-      <p>Performance management</p>
+    {% for service in site.data.services %}
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4">
+      {% include icon.html icon=service.icon %}
+      <p>{{ service.title }}</p>
     </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Disciplinaries">
-      <p>Disciplinaries</strong></p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Grievances">
-      <p>Grievances</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Sickness and absence">
-      <p>Sickness and absence</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="Redundancy">
-      <p>Redundancy</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100" alt="TUPE">
-      <p>TUPE</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Acquisition (HR due diligence)">
-      <p>Acquisition (HR due diligence)</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Succession planning">
-      <p>Succession planning</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Employee mental health">
-      <p>Employee mental health</p>
-    </div>
-    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-      <img src="/assets/img/icon-services-graph-grey.jpeg" class="mx-auto d-block mb-2 mw-100"
-        alt="Training and development">
-      <p>Training and development</p>
-    </div>
+    {% endfor %}
   </div>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col">
       <a href="#" class="btn btn-primary px-4">Learn more</a>
     </div>
@@ -182,9 +127,9 @@ layout: default
 </div>
 
 <div class="container-fluid py-5 text-center">
-  <div class="row mb-4">
+  <div class="row">
     <div class="col">
-      <h3 class="mb-4 fw-bolder text-uppercase">Know you need HR support but not sure what you need?</h3>
+      <h3>Know you need HR support but not sure what you need?</h3>
       <p>Complete our free online health check, and we'll be in touch to discuss any potential risks you may have which
         could open you up to financial issues and damage to your reputation.</p>
     </div>
@@ -195,36 +140,3 @@ layout: default
     </div>
   </div>
 </div>
-
-<div class="container-fluid py-5 bg-light text-center">
-  <div class="row mb-4">
-    <div class="col">
-      <p>For the latest HR guidance and company news in your inbox, sign up to our newsletter:</p>
-    </div>
-  </div>
-  <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center" action="#">
-    <div class="col-auto">
-      <label class="visually-hidden" for="newsletterSubscribeEmail">Username</label>
-      <input type="email" name="email" id="newsletterSubscribeEmail" class="form-control text-center"
-        placeholder="Your email address">
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary">Subscribe</button>
-    </div>
-  </form>
-</div>
-
-<!-- <div class="posts">
-  {% for post in site.posts %}
-  <article class="post">
-
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
-
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-  </article>
-  {% endfor %}
-</div> -->

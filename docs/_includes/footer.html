@@ -1,41 +1,56 @@
+<div class="container-fluid py-5 bg-secondary text-center">
+  <div class="row">
+    <div class="col">
+      <p class="fw-bolder">For the latest HR guidance and company news in your inbox, sign up to our newsletter:</p>
+    </div>
+  </div>
+  <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center" action="#">
+    <div class="col-auto">
+      <label class="visually-hidden" for="newsletterSubscribeEmail">Email</label>
+      <input type="email" name="email" id="newsletterSubscribeEmail" class="form-control text-center"
+        placeholder="Your email address">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </div>
+  </form>
+</div>
+
 <div class="container-fluid py-5 bg-primary text-white">
-  <div class="row mb-4">
+  <div class="row">
     <div class="col-md-4 col-sm-6">
       <div class="navbar-dark">
         <ul class="navbar-nav flex-column">
+          {% for link in site.data.footer-links.col1 %}
           <li class="nav-item">
-            <a class="nav-link" href="/about/">About us</a>
+            <a class="nav-link {% if link.url == page.url %}active{% endif %}" href="{{ link.url }}" {% if
+              link.url==page.url %}aria-current="page" {% endif %}>{{ link.title }}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/blog/">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact/">Contact us</a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
     <div class="col-md-4 col-sm-6">
       <div class="navbar-dark">
         <ul class="navbar-nav flex-column">
+          {% for link in site.data.footer-links.col2 %}
           <li class="nav-item">
-            <a class="nav-link" href="/services/">Services</a>
+            <a class="nav-link {% if link.url == page.url %}active{% endif %}" href="{{ link.url }}" {% if
+              link.url==page.url %}aria-current="page" {% endif %}>{{ link.title }}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/online-health-check/">Online health check</a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
   </div>
-  <div class="row mb-4">
+  <div class="row mt-4">
     <div class="col">
       <span class="pb-2">Follow us: {% include social-links.html %}</span>
     </div>
   </div>
-  <div class="row small">
+  <div class="row mt-4 small">
     <div class="col">
-      <div><a class="link-secondary text-decoration-none" href="#">Privacy</a> &vert; <a
+      <div><a class="link-secondary text-decoration-none" href="#">Privacy</a>&nbsp;&vert;&nbsp;<a
           class="link-secondary text-decoration-none" href="#">Terms</a></div>
       <small class="text-muted fst-italic">&#169; Copyright {{ 'now' | date: "%Y" }} Highridge HR
         Consultancy</small>
