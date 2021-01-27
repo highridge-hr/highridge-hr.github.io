@@ -43,10 +43,10 @@ plugins: []
 #   - jekyll-sitemap
 #   - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/
 # Outputting
 # permalink: /:title/
