@@ -18,9 +18,16 @@ google_analytics:
 
 ### Jekyll Settings ###
 # Build settings
-source: ./docs
+source: .
 destination: ./_site
 excerpt_separator: <!--more-->
+
+permalink: /:collection/:year/:month/:day/:title:output_ext
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title:output_ext
 
 # Serving
 detach: false
@@ -35,18 +42,21 @@ show_dir_listing: false
 
 sass:
   sass_dir: _sass
-  # style: :compressed
+  style: :compressed
 
 # safe: true
 # whitelist: []
-plugins: []
-#   - jekyll-sitemap
-#   - jekyll-feed
-
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 # exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/
+#   - "Gemfile"
+#   - "Gemfile.lock"
+#   - "node_modules"
+#   - "vendor/bundle/"
+#   - "vendor/cache/"
+#   - "vendor/gems/"
+#   - "vendor/ruby/"
+
 # Outputting
 # permalink: /:title/
