@@ -2,8 +2,8 @@ $primary: #2F4F6C;
 $secondary: #AAB9C4; // #ABB8C4
 $light: #E0E5E9; // #ECECEC // #e2e6ea // #eff1f3
 
-$input-bg: #CED7DD; // #CAD4DC;
-$input-focus-bg: $light;
+// $input-bg: $light; // #CED7DD; // #CAD4DC;
+// $input-focus-bg: white;
 
 $grid-gutter-width: 3rem;
 
@@ -53,6 +53,11 @@ h1 {
   line-height: 1.25;
 }
 
+.small-muted {
+  @extend .text-muted;
+  font-size: 0.8em;
+}
+
 .blockquote {
   &::before {
     content: "\201C"; // ldquo
@@ -65,5 +70,12 @@ h1 {
 .blockquote-footer {
   &::before {
     content: ""; // em dash, nbsp
+  }
+}
+
+.bg-secondary .form-control {
+  background-color: $light;
+  &:focus {
+    background-color: $white;
   }
 }

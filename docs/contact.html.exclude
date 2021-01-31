@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="jumbotron bg-img-header-blog">
+	<div class="content">
+        <h1>Contact Us</h1>
+        <p class="fw-bolder">If you'd like to discuss your HR requirements with us, please leave us a message and we'll get back to you as soon as possible.</p>
+	</div>
+</div>
+
+<div class="layout">
+
+	<div class="container-fluid py-5">
+
+        <form novalidate class="row g-3 needs-validation" action="https://highridge-hr.us7.list-manage.com/subscribe/post" method="POST">
+            <input type="hidden" name="u" value="05910a7629254ae5e4552f8b5">
+            <input type="hidden" name="id" value="bbef016f3e">
+            <div class="col-md-6">
+              <label for="MERGE1" class="form-label">First name</label>
+              <input required class="form-control" type="text" name="MERGE1" id="MERGE1" autocorrect="off">
+            </div>
+            <div class="col-md-6">
+              <label for="MERGE2" class="form-label">Last name</label>
+              <input required class="form-control" type="text" name="MERGE2" id="MERGE2" autocorrect="off">
+            </div>
+            <div class="col-12">
+              <label for="MERGE0" class="form-label">Email</label>
+              <input required class="form-control" type="email" name="MERGE0" id="MERGE0"  autocapitalize="off" autocorrect="off">
+            </div>
+            <div class="col-12">
+              <label for="MERGE3" class="form-label">Message</label>
+              <textarea required class="form-control" rows="3" name="MERGE3" id="MERGE3"></textarea>
+            </div>
+            <div class="col-12 small-muted">
+              <p>Highridge HR Consultancy is committed to protecting and respecting your privacy, and we’ll only use your personal information to administer your account and to provide the products and services you requested from us. From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:</p>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="gdpr[51623]" id="gdpr_51623" value="Y">
+                <label class="form-check-label" for="gridCheck">
+                    I agree to receive other communications from Highridge HR Consultancy via email
+                </label>
+              </div>
+            </div>
+            <div class="col-12 small-muted">
+                <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our website.
+                    By clicking submit below, you consent to allow Highridge HR Consultancy to store and process the personal information submitted above to provide you the content requested.</p>
+                <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+        <script>
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+                console.log(forms)
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+        </script>
+
+    </div>
+
+</div>
