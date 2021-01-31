@@ -47,7 +47,7 @@ This website uses Google Analytics to help analyse how users use the site.  The 
 
 We will never (and will not allow any third party to) use he statistical analytics tool to track or to collect Personally Identifiable information of visitors to our site.  Google will not associate your IP address with any other data held by Google.  Neither we nor Google will link, or seek to link, an IP address with the identity of a computer user.  We will not associate any data gathered from this site with any Personal Identifiable information from any source, unless you explicitly submit that information via a fill-in form on our website.
 
-**Cookies set by Google Analytics:** - for more information about Google Analytics, view their terms of service here: [Google Analytics](http://www.google.com/intl/en_uk/analytics/tos.html).
+**Cookies set by Google Analytics:** - for more information about Google Analytics, view their terms of service here: [Google Analytics](https://marketingplatform.google.com/about/analytics/terms/us/).
 
 **Using web browser settings to manage cookies**
 
