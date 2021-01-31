@@ -1,7 +1,7 @@
-- name: Alan
-  role: Father
-  company: HighridgeHR
-  content: Quote goes in here
+- name: Emma Hollas
+  role: Nursery Management Team
+  company: Almond House Nursery
+  content: “We have been very pleased with Alison’s services. She has high knowledge and expertise within the HR field and has helped us to implement new procedures within our workplace. Alison is very approachable and helpful and she is always on hand to offer advice and assist us.”
 
 - name: Leanne
   role: Daughter
