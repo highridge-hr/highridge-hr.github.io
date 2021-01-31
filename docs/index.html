@@ -55,29 +55,30 @@ title: Home
           companies, we:</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-6 col-sm-4 mt-4">
+    <div class="row row-cols-2 row-cols-sm-3">
+      <!-- col-6 col-sm-4 -->
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p><strong>Understand your industry</strong> & regulations associated with it.</p>
       </div>
-      <div class="col-6 col-sm-4 mt-4">
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p>Advise on the <strong>best ways to invest in your people.</strong></p>
       </div>
-      <div class="col-6 col-sm-4 mt-4">
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p>Are <strong>not corporate</strong> - with a friendly, informal approach to our work.</p>
       </div>
-      <div class="col-6 col-sm-4 mt-4">
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p>Are not a &quot;one size fits all&quot; business. We tailor our work to fit your company and its values.</p>
       </div>
-      <div class="col-6 col-sm-4 mt-4">
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p>Don&apos;t use faceless call centres. We&apos;re <strong>friendly, approachable and care for individual
             circumstances.</strong></p>
       </div>
-      <div class="col-6 col-sm-4 mt-4">
+      <div class="col mt-4">
         {% include icon.html icon="hr-logo" %}
         <p>Are a <strong>cost effective HR solution</strong> for your business &hyphen; pick whether you use us on a
           retainer or ad-hoc basis.</p>
@@ -89,9 +90,10 @@ title: Home
     <div class="row">
       <h3>Trusted and relied upon by many</h3>
     </div>
-    <div class="row">
+    <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"> -->
+    <div class="row justify-content-center">
       {% for quote in site.data.quotes %}
-      <div class="col-sm-6 col-md-4 mt-4">
+      <div class="col mt-4">
         <svg viewBox="0 0 150 150" class="img-profile">
           <use xlink:href="#profile"></use>
         </svg>
@@ -114,9 +116,10 @@ title: Home
         <h3>Our Services</h3>
       </div>
     </div>
-    <div class="row">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
       {% for service in site.data.services %}
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mt-4">
+      <!-- col-6 col-sm-4 col-md-3 col-lg-2 -->
+      <div class="col mt-4">
         {% include icon.html icon=service.icon %}
         <p>{{ service.title }}</p>
       </div>
