@@ -91,12 +91,17 @@ title: Home
       <h3>Trusted and relied upon by many</h3>
     </div>
     <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"> -->
-    <div class="row justify-content-center">
+    <div class="row row-cols-1 row-cols-sm-2 justify-content-center">
+    <!-- <div class="row justify-content-center"> -->
       {% for quote in site.data.quotes %}
       <div class="col mt-4">
+        {% if quote.image %}
+        <img class="img-profile" src="/assets/img/quotes/{{ quote.image }}" alt="{{ quote.name }}" />
+        {% else %}
         <svg viewBox="0 0 150 150" class="img-profile">
           <use xlink:href="#profile"></use>
         </svg>
+        {% endif %}
         <figure>
           <blockquote class="blockquote">
             {{ quote.content }}
