@@ -104,7 +104,7 @@ title: Home
         {% endif %}
         <figure>
           <blockquote class="blockquote">
-            {{ quote.content }}
+            {{ quote.content | newline_to_br }}
           </blockquote>
           <figcaption class="blockquote-footer">
             {{ quote.name }}, {{ quote.role }}, <cite title="Company">{{ quote.company }}</cite>

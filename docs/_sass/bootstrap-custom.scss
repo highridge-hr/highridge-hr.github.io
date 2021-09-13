@@ -36,7 +36,7 @@ $headings-margin-bottom: 1.5rem;
 // $container-padding-x: $grid-gutter-width / 2 !default;
 
 // $blockquote-margin-y:         $spacer !default;
-// $blockquote-font-size:        $font-size-base * 1.25 !default;
+$blockquote-font-size:        $font-size-base !default;
 // $blockquote-footer-color:     $gray-600 !default;
 // $blockquote-footer-font-size: $small-font-size !default;
 
@@ -68,6 +68,7 @@ h1 {
 }
 
 .blockquote-footer {
+  margin-top: 0;
   &::before {
     content: ""; // em dash, nbsp
   }
