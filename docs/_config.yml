@@ -36,16 +36,10 @@ host: 127.0.0.1
 baseurl: "" # does not include hostname
 show_dir_listing: false
 
-# kramdown:
-#   syntax_highlighter_opts:
-#     css_class: "highlight"
-
 sass:
   sass_dir: _sass
   style: :compressed
 
-# safe: true
-# whitelist: []
 plugins:
   - jekyll-sitemap
   - jekyll-feed
@@ -59,6 +53,3 @@ exclude:
   - "vendor/gems/"
   - "vendor/ruby/"
   - "*.exclude"
-
-# Outputting
-# permalink: /:title/
